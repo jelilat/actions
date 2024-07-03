@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "tsx watch examples/index.ts",
-    "build": "tsc && tsx examples/index.ts"
+    "build": "npx tsc && npx tsx examples/index.ts"
   },
   "dependencies": {
     "@hono/node-server": "^1.11.3",
@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.11.17",
+    "typescript": "^4.5.4",
     "tsx": "^4.7.1",
     "prettier": "^3.3.2"
   }
