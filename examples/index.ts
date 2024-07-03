@@ -1,5 +1,6 @@
 import { serve } from '@hono/node-server';
 import donate from './donate/route';
+import ethereumDonate from './ethereum-donate/route';
 import jupiterSwap from './jupiter-swap/route';
 import { cors } from 'hono/cors';
 import { swaggerUI } from '@hono/swagger-ui';
@@ -10,6 +11,7 @@ app.use('/*', cors());
 
 // <--Actions-->
 app.route('/api/donate', donate);
+app.route('/api/ethereum-donate', ethereumDonate);
 app.route('/api/jupiter/swap', jupiterSwap);
 // </--Actions-->
 
